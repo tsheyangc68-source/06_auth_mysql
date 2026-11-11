@@ -1,11 +1,10 @@
-/* app/style.css — basic styles shared by the auth pages */
+/* app/style.css */
 body {
   font-family: sans-serif;
   padding: 20px;
   background: #f5f6f8;
 }
 
-/* centered white box, used on every page */
 .auth-box {
   max-width: 360px;
   margin: 40px auto;
@@ -13,6 +12,12 @@ body {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin-top: 0;
+  color: #00758f;
 }
 
 form {
@@ -29,6 +34,12 @@ button {
   border-radius: 6px;
 }
 
+input:focus {
+  outline: none;
+  border-color: #00758f;
+  box-shadow: 0 0 0 3px rgba(0, 117, 143, 0.15);
+}
+
 button {
   background: #00758f;
   border-color: #00758f;
@@ -36,7 +47,14 @@ button {
   cursor: pointer;
 }
 
-/* error message below the form */
+button:hover {
+  background: #005a70;
+}
+
+a {
+  color: #00758f;
+}
+
 .error {
   color: #c0392b;
 }
